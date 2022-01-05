@@ -1,0 +1,23 @@
+SSMS 
+use AdventureWorks2019
+схема: https://abrisplatform.ru/articles/quick-create-web-application-from-existing-database/
+
+1. Получить набор данных [ProductID], [Name] из таблицы [Production].[Product], у который цвет не черный 
+Важно: в таблице есть товары, у которых не указан цвет
+
+2. Из таблицы [Person].[Person] найти людей, с которыми производились изменения в 2008 году и у которых нет отчества. 
+Вывести всю информацию из таблиц
+
+3. Использование set operators
+т.е.  получить список сотрудников, которые находятся в обеих таблицах 
+(HumanResources.Employee, HumanResources.JobCandidate) одновременно
+Вывод: полное имя + job title
+
+4. Решить задачу 3 с использованием join, без использования set operators
+
+5. Получите список Components, купленных держателями карты «Distinguish».
+Получите уникальные значения для следующих столбцов:
+•	[Product] – имя Components 
+•	[Сolor] - цвет Components
+
+

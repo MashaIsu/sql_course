@@ -1,0 +1,18 @@
+1) Завершить лабораторную работу с базой "Полеты"
+
+2) Завершить создание отчета Sales Report (добавить вторую карточку + вторую кнопку для переключения закладок. При переключении должны
+быть видны только визуалы, относящиеся к закладке). Выложить файл .pbix в репозиторий (github)
+
+3) Продолжить готовиться к сертификации по тестам
+
+4) Решить задачи (3 шт.) с предыдущей лекции
+
+5) Повторить теоретические вопросы 
+
+6) Завершить выполнение лаборатории Power BI (+ последняя тема https://docs.microsoft.com/ru-ru/learn/paths/perform-analytics-power-bi/
+2 модуля)
+
+7) Изучить статью о cte https://docs.microsoft.com/en-us/sql/t-sql/queries/with-common-table-expression-transact-sql?view=sql-server-ver15
+ И еще одна статья: http://www.sql-tutorial.ru/ru/book_common_table_expressions_cte/page1.html
+
+8) Решить задачу 24 на эту тему с sql-ex (она ранее была решена без cte, сейчас попробуй решить ее с сte) 

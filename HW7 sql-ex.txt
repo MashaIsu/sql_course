@@ -48,3 +48,6 @@ Select maker, max(type) as max_type
 from Product p
 group by maker
 having count(distinct type) = 1 and count(model) > 1
+
+41
+

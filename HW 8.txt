@@ -19,5 +19,5 @@ use AdventureWorks2019
 Получите уникальные значения для следующих столбцов:
 •	[Product] – имя Components 
 •	[Сolor] - цвет Components
-
+решение
 

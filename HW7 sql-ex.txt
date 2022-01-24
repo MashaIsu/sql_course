@@ -1,0 +1,50 @@
+36
+select ship as name
+from classes c, outcomes o
+where c.class = o.ship
+union
+Select name
+from ships 
+where name = class
+
+37
+select c.class
+FROM classes c
+ LEFT JOIN (
+ SELECT class, name
+ FROM ships
+ UNION
+ SELECT ship, ship
+ FROM outcomes
+) AS t1 ON t1.class = c.class
+GROUP BY c.class
+HAVING COUNT(t1.name) = 1
+
+38
+Select distinct country
+from classes 
+where type = 'bb'
+intersect
+Select distinct country
+from classes
+where type = 'bc'
+
+
+39
+select distinct t1.ship
+from (
+select *
+from outcomes o left join battles b on o.battle = b.name 
+where result='damaged'
+) as t1  
+where exists (
+select o.ship 
+from outcomes o left join battles b on o.battle=b.name 
+where o.ship=t1.ship and t1.date<b.date
+)
+
+40
+Select maker, max(type) as max_type
+from Product p
+group by maker
+having count(distinct type) = 1 and count(model) > 1

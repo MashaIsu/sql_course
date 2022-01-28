@@ -49,5 +49,46 @@ from Product p
 group by maker
 having count(distinct type) = 1 and count(model) > 1
 
-41
+43(решение посмотрела в инете, нужен разбор)
+select name
+from battles
+where year(date) not in
+     (select launched
+      from ships
+      where launched is not null)
+
+44
+
+select name
+from ships
+where name like 'R%'
+union
+select ship as name
+from outcomes
+where ship like 'R%'
+
+45
+
+select name
+from ships
+where name like '% % %'
+union
+select ship as name
+from outcomes
+where ship like '% % %'
+
+46 (запрос не прошел решение на проверочной базе)
+Select o.ship, c.displacement, c.numGuns
+from outcomes o left join ships s on o.ship=s.name
+left join classes c on s.class=c.class
+where o.battle = 'Guadalcanal'
+
+49
+Select s.name
+from ships s inner join classes c on s.class = c.class
+where c.bore = 16
+union
+select o.ship as name
+from outcomes o inner join classes c on o.ship = c.class
+where c.bore = 16
 

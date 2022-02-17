@@ -5,8 +5,22 @@ use AdventureWorks2019
 1. Получить набор данных [ProductID], [Name] из таблицы [Production].[Product], у который цвет не черный 
 Важно: в таблице есть товары, у которых не указан цвет
 
+решение:
+select [ProductID], [Name], [Color]
+from [Production].[Product]
+where [Color] <> 'Black'
+union
+select [ProductID], [Name], [Color]
+from [Production].[Product]
+where [Color] is NULL
+
 2. Из таблицы [Person].[Person] найти людей, с которыми производились изменения в 2008 году и у которых нет отчества. 
 Вывести всю информацию из таблиц
+
+решение:
+select *
+ from [Person].[Person] 
+ where [MiddleName] is NULL and [ModifiedDate] > '2008-01-01 00:00:00.000' and [ModifiedDate] < '2009-01-01 00:00:00.000'
 
 3. Использование set operators
 т.е.  получить список сотрудников, которые находятся в обеих таблицах 
